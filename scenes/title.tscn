@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://bg46h5x2n6eev"]
+
+[ext_resource type="FontFile" uid="uid://dr201ov4c76pb" path="res://fonts/Crackman.otf" id="1_p6dhs"]
+[ext_resource type="Script" uid="uid://box5do1sr48nd" path="res://scripts/title.gd" id="1_pyl7j"]
+[ext_resource type="Texture2D" uid="uid://bkgrir378horu" path="res://graphics/player/player_simple.png" id="2_pyl7j"]
+[ext_resource type="FontFile" uid="uid://hqpa84d2dqvp" path="res://fonts/Better VCR 9.0.1.ttf" id="3_b3w7a"]
+
+[node name="Title" type="Control" unique_id=1323001132]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pyl7j")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1144909015]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.38484013, 0.6299337, 0.5641589, 1)
+
+[node name="Label" type="Label" parent="." unique_id=1856189685]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -352.5
+offset_top = -84.5
+offset_right = 352.5
+offset_bottom = -250.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_p6dhs")
+theme_override_font_sizes/font_size = 140
+text = "Die or try"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2105377657]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -50.0
+offset_right = 50.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_pyl7j")
+
+[node name="Label2" type="Label" parent="." unique_id=1043050326]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -54.5
+offset_top = 250.0
+offset_right = 54.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_b3w7a")
+theme_override_font_sizes/font_size = 30
+text = "High score: 67"
+
+[node name="Label3" type="Label" parent="." unique_id=1559192597]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -23.0
+offset_right = 20.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("3_b3w7a")
+theme_override_font_sizes/font_size = 30
+text = "Espace to start"
+horizontal_alignment = 1
